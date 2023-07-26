@@ -14,8 +14,28 @@
     <!-- Tailwind & Daisy -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'color-primary': '#121212',
+                'color-secondary': 'rgba(18, 18, 18, 0.80)',
+                'color-third':'rgba(18, 18, 18, 0.60)',
+                'color-fourth':'rgba(18, 18, 18, 0.40)',
+                'color-white':'#FFF',
+                'color-Details':'rgba(248, 85, 89, 1)'
+              }
+            }
+          }
+        }
+      </script>
+    <style>
+      body{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
 </head>
-
 <body>
     <header>
 
@@ -23,9 +43,29 @@
     <main>
 
     </main>
-    <footer>
-        
+    <footer class="bg-color-primary text-color-white flex justify-center">
+      <div class="container py-20 ">
+        <a href="#" class="flex flex-wrap items-center justify-center gap-4 text-center">
+          <img src="images/logo.png" alt="" >
+          <h2 class="capitalize text-4xl ">Fruit Burst</h2>
+        </a>
+        <ul class="flex flex-wrap justify-center m-11 text-center">
+          <li class="m-5">Home</li>
+          <li class="m-5">About Us</li>
+          <li class="m-5">Shop</li>
+          <li class="m-5">All Fruits</li>
+          <li class="m-5">Support</li>
+          <li class="m-5">My Account</li>
+        </ul>
+        <div class="flex flex-wrap justify-center items-center gap-8">
+          <a href=""><img src="images/twitter.png" alt="" class="h-10"></a>
+          <a href=""><img src="images/facebook.png" alt="" class="h-10"></a>
+          <a href=""><img src="images/youtube.png" alt="" class="h-10"></a>
+          <a href=""><img src="images/linkedin.png" alt="" class="h-10"></a>
+          <a href=""><img src="images/instagram.png" alt="" class="h-10"></a>
+          <a href="#"> <img src="images/apple.png" alt="" class="h-10"></a>
+        </div>
+      </div>
     </footer>
 </body>
-
 </html>
